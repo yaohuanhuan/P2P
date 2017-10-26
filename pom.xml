@@ -19,6 +19,8 @@
         <org.springframework.version>4.3.10.RELEASE</org.springframework.version>
         <struts2.version>2.3.24</struts2.version>
         <struts2.version>2.3.24</struts2.version>
+        <hibernate.version>5.0.1.Final</hibernate.version>
+        <mysql-connector-java.version>5.1.6</mysql-connector-java.version>
 
     </properties>
 
@@ -58,6 +60,18 @@
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-convention-plugin</artifactId>
             <version>${struts2.version}</version>
+        </dependency>
+        <!--hibernate核心包-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <!-- 连接mysql需要用到的-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector-java.version}</version>
         </dependency>
     </dependencies>
 
